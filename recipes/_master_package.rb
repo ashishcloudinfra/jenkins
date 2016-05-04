@@ -70,8 +70,9 @@ when 'rhel'
     notifies :restart, 'service[jenkins]', :immediately
   end
 end
-
+=begin
 service 'jenkins' do
   supports status: true, restart: true, reload: true
   action [:enable, :start]
 end
+=end
